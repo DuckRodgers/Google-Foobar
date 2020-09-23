@@ -23,6 +23,7 @@ output: [9,1,1,1]
 This one was pretty straightforward. Given a number, such as 12m², calculate the panel sizes that can be installed to fill the whole thing. 3m by 3m panels (3x3) return a total of 9m², and the remaining 3m² of area (12-9) need to be filled by 1x1 solar panels. While the input is greater than 1 and less than 1.000.000, run the following logic:
 
 **Some backtesting:**
+```
 x = 8m².
 Then --> root = int(x ** 0.5) --> Approximately 2
          solution = [2]
@@ -30,5 +31,6 @@ Then --> root = int(x ** 0.5) --> Approximately 2
          root = int(x ** 0.5) --> 2
          solution = [2,2]
          x = x - root ** 2 --> x = 4 - 2 ** 2
+```
          
 Since the output required by the challenge was "2,2", I used from __future__ import print_function.
