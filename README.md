@@ -58,7 +58,7 @@ Step 1: Try to reach the node's left children.
 Step 2: If not possible, try to reach the node's right children.
 Step3: If not possible, return the value of the node.
 ```
-### The Solution
+### [The Solution](second-chall-level1.py)
 Not going to lie, I spent 50% of my time trying to understand this problem. Because I'm an engineer, my first instinct was trying to understand the functioning logic of the example trees they provided, so I tested my hypothesis and for the tree of height 3 it worked perfectly. Then I tried to assemble the tree of height 5, and to my surprise... it failed. I cracked my head around a bit and did some research, until I found out how was the _actual_ logic behind it.
 
 Once I got that out of the way, the next step was trying to understand **how to actually do the thing**. There are plenty of algorithms in the internet about post-order traversals, except all of them take into consideration you're building your tree randomly. **We aren't**, the top-most value will always be the number x = (2^h - 1), where h is the heigth of the tree. So, for a tree of height 3, the top-most value will be 7. Then, you need to start filling the tree in order, with values from 1 to "x" as given above. The "1" has to be the lower-most left value in the tree, then "2" will be the lower-most right children... ok, that was weird, here it is:
