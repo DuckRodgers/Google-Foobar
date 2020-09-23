@@ -43,4 +43,30 @@ Good news: My strategy worked out fine, because I needed every single minute for
 ### The Challenge
 Long story short: **Commander LAMBCHOP** has a ion-flux machine which is conveniently built as a **perfect binary tree**. Unluckily (for her), the ion-flux machine broke down, and all the labels from the components got misplaced. The minions are now manually trying to figure out the best to way fix them, but you believe you can do it faster because, and check this out, the tree is built in a **post-order traverse** fashion.
 
-First things first: It's a real bummer that they don't teach us this kinds of things in petroleum engineering.
+First things first: It's a real bummer that they don't teach us this kinds of things in petroleum engineering. This is why engineering is going to waste.
+In case you don't know what a binary tree is, the best way to define it is a group of objects (called **nodes**), where each node contain a self value and may contain two children, a **left node** and a  **right node**. A **Perfect Binary Tree** is a tree where each and every node of the Tree contains exactly two children, so, for example, a Binary Tree of Height 3 would look something like this:
+```
+         X
+       /   \
+      Y     Z
+     / \   / \
+    W1 W2 W3 W4
+```
+OK, so that settles the first part, but how about the **post-order traversal** which definitely sounds like something you'd want to say on a dinner when meeting your boyfriend/girlfriend's family. Well, I had to google that bit a little bit, and the concept is actually pretty simple: a **post-order traversal** is a way to create a binary tree, in which the logical filling guide happens:
+```
+Step 1: Try to reach the node's left children.
+Step 2: If not possible, try to reach the node's right children.
+Step3: If not possible, return the value of the node.
+```
+### The Solution
+Not going to lie, I spent 50% of my time trying to understand this problem. Because I'm an engineer, my first instinct was trying to understand the functioning logic of the example trees they provided, so I tested my hypothesis and for the tree of height 3 it worked perfectly. Then I tried to assemble the tree of height 5, and to my surprise... it failed. I cracked my head around a bit and did some research, until I found out how was the _actual_ logic behind it.
+
+Once I got that out of the way, the next step was trying to understand **how to actually do the thing**. There are plenty of algorithms in the internet about post-order traversals, except all of them take into consideration you're building your tree randomly. **We aren't**, the top-most value will always be the number x = (2^h - 1), where h is the heigth of the tree. So, for a tree of height 3, the top-most value will be 7. Then, you need to start filling the tree in order, with values from 1 to "x" as given above. The "1" has to be the lower-most left value in the tree, then "2" will be the lower-most right children... ok, that was weird, here it is:
+```
+         7
+       /   \
+      3     6
+     / \   / \
+    1  2  4   5
+```
+The first thing is: **OOP** is fundamental here. I saw some people filling this with lists, which was even my first guess, but when I tried to implement I started brick walls.
