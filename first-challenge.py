@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 def solution(entry):
     answer = []
     while (entry >= 1 and entry <= 1000000):
