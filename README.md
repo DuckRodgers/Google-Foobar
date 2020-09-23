@@ -69,4 +69,45 @@ Once I got that out of the way, the next step was trying to understand **how to 
      / \   / \
     1  2  4   5
 ```
-The first thing is: **OOP** is fundamental here. I saw some people filling this with lists, which was even my first guess, but when I tried to implement I started brick walls.
+The first thing is: **OOP** is fundamental here. I saw some people filling this with lists, which was even my first guess, but when I tried to implement I started hitting brick walls. My second guess was dictionaries, but I soon dropped that. OOPs was the way to go. Another keyword was **Recurssion**. This is one of those topics which every (non-programmer) python learner reads and thinks: "yeah, I'll definitely never use that". Unless you want to make **factorials**, in which case you'd better.
+
+Well, to my surprise, I had to take that out of my toolbox and use it as well.
+
+```
+The logic behind the algorithm is very simple:
+1) First check in which **level** you are, that is, the **heigth** of the tree. If you are not on the lower-most level, then you can keep on going down.
+2) Check to see if the left children is empty. 
+2.1) If it is, create a Node on it with value 0 and change that children's **level** to self+1.
+2.2) If it's Node(0), then start the **recurssion** using that left children as the new reference node (basically I called this _go down_).
+2.3) If it's not empty nor Node(0), check its own value.
+2.3.1) If self value is Node(0):
+2.3.1.1) Repeat step 2.1) except now for the right leg.
+2.3.1.2) If none of that worked, change self value to the number you're currently trying to attribute.
+3) If all of the above failed, check if right leg is None.
+3.1) If not, create Node(0).
+3.2) If right leg's value is already Node(0), start **recurssion** using that node as reference.
+3.3) If all else fails, change self value to the number you're currently trying to attribute.
+```
+Wheew! I mean, **hard**. The worse part wasn't programming it _per se_, but trying to come up with the logic. Recurssion wasn't something I use daily, so adding that and understanding how I could make it work was a little bit challenging, but it all turned out great at the end and Google hir...
+
+**WAIT**. We have _created_ the tree, but the challenge asked for something different. What **LAMBCHOP** actually wants is the following:
+
+```
+Given a function solution(h,q), where h is the height of the tree and q is a list of integers, return a list of integers with the positions of the nodes above the ones provided in each q element, and if there isn't any, return -1.
+
+Example: input solution(3,[1,2,6,7]) outputs [3,3,7,-1].
+```
+So, it's not the tree itself, but the numbers above it!!!
+
+This was actually more simple. We needed **recurssion** again, and the checking procedures were as follows:
+```
+1) First check if the number provided is less than the value in the left leg. If positive, make a recurssion at the left leg.
+2) If not, check self value. If it's the same as the number provided, return self value.
+3) If not, check to see if the number provided is less than the value in the right leg. If positive, make a recurssion at the right leg.
+4) If not, check self value. If it's the same as the number provided, return self value.
+```
+And so, for a solution(3, [1,2,7,6]) we have an output:
+```
+[3,3,-1,7]
+```
+We passed all the tests, but I'm not entirely sure this code is without errors, so feel free to jiggle it a bit!
