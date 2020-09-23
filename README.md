@@ -20,4 +20,4 @@ input: solution.solution(9)
 output: [9,1,1,1]
 ```
 ### The Solution
-This one was pretty straightforward. Given a number, such as 12m², calculate the panel sizes that can be installed to fill the whole thing. 3m by 3m panels (3x3) return a total of 9m², and the remaining 3m² of area (12-9) need to be filled by 1x1 solar panels. There wasn't a lot of tricks being pulled out of the hat with this one, just a basic loop
+This one was pretty straightforward. Given a number, such as 12m², calculate the panel sizes that can be installed to fill the whole thing. 3m by 3m panels (3x3) return a total of 9m², and the remaining 3m² of area (12-9) need to be filled by 1x1 solar panels. There wasn't a lot of tricks being pulled out of the hat with this one, just a basic loop ranging from the highest possible area (the int itself) all the way to 1. If the 
