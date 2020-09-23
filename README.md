@@ -36,7 +36,11 @@ Then --> root = int(x ** 0.5) --> Approximately 2
 Since the output required by the challenge was "2,2", I used from __future__ import print_function. Complete success! We were able to win **LAMBCHOP's** attention and go to **LEVEL 2!**
 
 ## The Second Level - Second Challenge
-Happily past the first round, our adventure must go on. The first challenge I completed it in nearly 1 hour, a little bit more because before starting the challenge I had to cook my dinner, otherwise my brain wouldn't funcion properly.
+Happily past the first round, our adventure must go on. Pretty excited and confident, I was thinking "huh, getting into Google isn't _that_ hard", I put on my best pompous mask and requested the second challenge. This was a saturday morning, because I worked so I wanted to have as much time as possible to crack this.
+
+Good news: My strategy worked out fine, because I needed every single minute for this.
 
 ### The Challenge
-This one was a little bit more tricky. They started the 
+Long story short: **Commander LAMBCHOP** has a ion-flux machine which is conveniently built as a **perfect binary tree**. Unluckily (for her), the ion-flux machine broke down, and all the labels from the components got misplaced. The minions are now manually trying to figure out the best to way fix them, but you believe you can do it faster because, and check this out, the tree is built in a **post-order traverse** fashion.
+
+First things first: It's a real bummer that they don't teach us this kinds of things in petroleum engineering.
