@@ -19,7 +19,7 @@ Create a function that accepts an integer varying from 1 to 1.000.000 (inclusive
 input: solution.solution(9)
 output: [9,1,1,1]
 ```
-### The Solution
+### The Solution [first-challenge.py]
 This one was pretty straightforward. Given a number, such as 12m², calculate the panel sizes that can be installed to fill the whole thing. 3m by 3m panels (3x3) return a total of 9m², and the remaining 3m² of area (12-9) need to be filled by 1x1 solar panels. While the input is greater than 1 and less than 1.000.000, run the following logic:
 
 **Some backtesting:**
