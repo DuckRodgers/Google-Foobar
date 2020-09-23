@@ -39,6 +39,7 @@ Since the output required by the challenge was "2,2", I used from __future__ imp
 Happily past the first round, our adventure must go on. Pretty excited and confident, I was thinking "huh, getting into Google isn't _that_ hard", I put on my best pompous mask and requested the second challenge. This was a saturday morning, because I worked so I wanted to have as much time as possible to crack this.
 
 Good news: My strategy worked out fine, because I needed every single minute for this.
+Bad news: Getting into Google isn't easy, it isn't easy **at all**. I was wrooooooong!
 
 ### The Challenge
 Long story short: **Commander LAMBCHOP** has a ion-flux machine which is conveniently built as a **perfect binary tree**. Unluckily (for her), the ion-flux machine broke down, and all the labels from the components got misplaced. The minions are now manually trying to figure out the best to way fix them, but you believe you can do it faster because, and check this out, the tree is built in a **post-order traverse** fashion.
