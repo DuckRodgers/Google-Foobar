@@ -1,12 +1,9 @@
 def solution(entry):
     answer = []
     while (entry >= 1 and entry <= 1000000):
-      for lilnum in range(entry,1-1,-1):
-        if lilnum**2 > entry:
-            pass
-        else:
-            answer.append(lilnum)
-            entry = entry - lilnum**2
-      while entry>0:
-        answer.append(1)
-        entry -= 1
+      sol = int(entry**0.5)
+      answer.append(sol)
+      entry -= sol**2
+    new_answer = [var**2 for var in answer]
+    print(*new_answer,sep=",")
+higor = solution(8)
