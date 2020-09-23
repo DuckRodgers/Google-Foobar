@@ -20,15 +20,15 @@ input: solution.solution(9)
 output: [9,1,1,1]
 ```
 ### The Solution
-This one was pretty straightforward. Given a number, such as 12m², calculate the panel sizes that can be installed to fill the whole thing. 3m by 3m panels (3x3) return a total of 9m², and the remaining 3m² of area (12-9) need to be filled by 1x1 solar panels. Run a loop starting from the highest possible int (the same input by the user), square it up and if it's greater than the int provided initially, ignore it. Otherwise, add it to a list of solutions. The trick here is to create a variable that stores the remaining value, and while it is greater than 0, add 1 to your list of solutions.
+This one was pretty straightforward. Given a number, such as 12m², calculate the panel sizes that can be installed to fill the whole thing. 3m by 3m panels (3x3) return a total of 9m², and the remaining 3m² of area (12-9) need to be filled by 1x1 solar panels. While the input is greater than 1 and less than 1.000.000, run the following logic:
 
 **Some backtesting:**
 x = 8m².
-Then --> 8² = 64 (ignore)
-     --> 7² = 49 (ignore)
-     --> 6² = 36 (ignore)
-     --> 5² = 25 (ignore)
-     --> 4² = 16 (ignore)
-     --> 3² = 9  (ignore)
-     --> 2² = 4 (add to list) --> 8 - 4 = 4 (this is the number we're trying to fill now, and we can't
-     --> 1² = 64 (ignore)
+Then --> root = int(x ** 0.5) --> Approximately 2
+         solution = [2]
+         x = x - root ** 2 --> x = 8 - 2 ** 2
+         root = int(x ** 0.5) --> 2
+         solution = [2,2]
+         x = x - root ** 2 --> x = 4 - 2 ** 2
+         
+Since the output required by the challenge was "2,2", I used from __future__ import print_function.
