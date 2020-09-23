@@ -33,4 +33,10 @@ Then --> root = int(x ** 0.5) --> Approximately 2
          x = x - root ** 2 --> x = 4 - 2 ** 2
 ```
          
-Since the output required by the challenge was "2,2", I used from __future__ import print_function.
+Since the output required by the challenge was "2,2", I used from __future__ import print_function. Complete success! We were able to win **LAMBCHOP's** attention and go to **LEVEL 2!**
+
+## The Second Level - Second Challenge
+Happily past the first round, our adventure must go on. The first challenge I completed it in nearly 1 hour, a little bit more because before starting the challenge I had to cook my dinner, otherwise my brain wouldn't funcion properly.
+
+### The Challenge
+This one was a little bit more tricky. They started the 
