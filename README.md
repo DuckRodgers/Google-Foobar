@@ -35,7 +35,7 @@ Then --> root = int(x ** 0.5) --> Approximately 2
          
 Since the output required by the challenge was "2,2", I used from __future__ import print_function. Complete success! We were able to win **LAMBCHOP's** attention and go to **LEVEL 2!**
 
-## The Second Level - Second Challenge
+## The Second Level - First Challenge
 Happily past the first round, our adventure must go on. Pretty excited and confident, I was thinking "huh, getting into Google isn't _that_ hard", I put on my best pompous mask and requested the second challenge. This was a saturday morning, because I worked so I wanted to have as much time as possible to crack this.
 
 Good news: My strategy worked out fine, because I needed every single minute for this.
@@ -112,3 +112,21 @@ And so, for a solution(3, [1,2,7,6]) we have an output:
 [3,3,-1,7]
 ```
 We passed all the tests, but I'm not entirely sure this code is without errors, so feel free to jiggle it a bit!
+
+## The Second Level - Second Challenge
+With the head fuming for the first challenge of the second level, I went fully prepared (and aware) of the dangers ahead. As any motivational coach would say, we need to change our mindset, and my mindset was: _this will be hard_.
+
+So, things we learned from the previous phase: before programming, _read_ carefully the problem and write down keywords which might help solving the problem.
+
+On the little sci-fi story they have going on, in order to keep impressing **COMMANDER LAMBCHOP** we are given a new problem: she has an algorithm that awards duties for the minions, and it receives the ID from the minion, creates two numbers from it, one in descending order, the other in ascending, and then subtracts one from the other, generating a new number to repeat the process and choose the next minion's ID. Problem is: the algorithm enters in an infinite loop after some trials.
+
+### The Challenge
+Given a def solution(n,b), where n is an non-negative integer and b is given integer's base (binary, ternary, etc), indicate after how many different inputs does the algorithm starts looping.
+
+For example, for:
+```
+Input: def solution(1211, 3):
+Output: 1
+```
+
+### [The Solution](second-chall-level2.py)
