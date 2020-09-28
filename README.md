@@ -138,4 +138,6 @@ Output: 1
 ```
 
 ### [The Solution](second-chall-level2.py)
-What happens in the code is pretty fun. The first interesting thing is how binaries work (and other bases as well). We didn't really learn a lot about binaries in Petroleum Engineering, so absolutely everything was uncharted territory for me. I did a research (quick one, though) on how to transform different-base numbers and different-base operations (different as in 'not base 10'). The idea was pretty straigthforward
+What happens in the code is pretty fun. The first interesting thing is how binaries work (and other bases as well). I didn't really learn a lot about binaries in Petroleum Engineering, so absolutely everything was uncharted territory for me. I did a research (quick one, though) on how to transform different-base numbers and different-base operations (different as in 'not base 10'). The idea was pretty straigthforward: get two numbers in different bases, convert them to base 10, do the operation, and finally return the result in the given base. Now, before the criticism rain starts pouring in, I did thought about simply doing the operation in the original base, but it was 11pm and I was really sleepy, so I went with what came first.
+
+I created two functions, ´´´def convert_10´´´ and ´´´convert_base´´´ asdas
