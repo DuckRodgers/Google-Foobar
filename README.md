@@ -140,4 +140,14 @@ Output: 1
 ### [The Solution](second-chall-level2.py)
 What happens in the code is pretty fun. The first interesting thing is how binaries work (and other bases as well). I didn't really learn a lot about binaries in Petroleum Engineering, so absolutely everything was uncharted territory for me. I did a research (quick one, though) on how to transform different-base numbers and different-base operations (different as in 'not base 10'). The idea was pretty straigthforward: get two numbers in different bases, convert them to base 10, do the operation, and finally return the result in the given base. Now, before the criticism rain starts pouring in, I did thought about simply doing the operation in the original base, but it was 11pm and I was really sleepy, so I went with what came first.
 
-I created two functions, ´´´def convert_10´´´ and ´´´convert_base´´´ asdas
+I created two functions, **def convert_10** and **convert_base** and they respectively convert any number to base 10 and convert any base-10 number to a different base. Then, I accept the user's input and start looping through the numbers. If the number I am adding to the list ``` is in ``` the **answer list**, then I stop the loop and return the index of the number...
+
+And that's pretty much it! I mean, there is definitely room for improvement in this code, but I wrote it specifically well aware of its flaws and how I _could_ improve it, but again, wasn't really going for performance in this one. Other than that, I think it was pretty simple, considerably easier than the phase 1. There were about 10 tests, and all of them passed, so _yupiii_. On the other hand, I finished writing the code at around 11h30pm, but only actually submitted it on the other day around 16h00pm, so Google will think it took me longer than what it actually did...
+
+Here I am now, ready and eager for Phase 3!
+
+**Oh, and, btw, I did get the token!!** I shared it with a friend of mine who is a pretty good programmer. What surprised me from this part is that I got _one_ token invite, not _two_ as people were pointing out there, so, **disappointed**. But happy.
+
+Mainly happy.
+
+#BringLevel3
