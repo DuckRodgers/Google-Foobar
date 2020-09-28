@@ -123,6 +123,14 @@ On the little sci-fi story they have going on, in order to keep impressing **COM
 ### The Challenge
 Given a def solution(n,b), where n is an non-negative integer and b is given integer's base (binary, ternary, etc), indicate after how many different inputs does the algorithm starts looping.
 
+The algorithm from **COMMANDER LAMBCHOP** did this:
+
+```
+1) Receive a non-negative integer n
+2) Reorder such number by descending order and ascending (variables x,y)
+3) Subtract z = x-y. If z has a length smaller than the original n, add a '0' in front until it doesn't.
+4) n = z
+```
 For example, for:
 ```
 Input: def solution(1211, 3):
@@ -130,3 +138,4 @@ Output: 1
 ```
 
 ### [The Solution](second-chall-level2.py)
+What happens in the code is pretty fun. The first interesting thing is how binaries work (and other bases as well). We didn't really learn a lot about binaries in Petroleum Engineering, so absolutely everything was uncharted territory for me. I did a research (quick one, though) on how to transform different-base numbers and different-base operations (different as in 'not base 10'). The idea was pretty straigthforward
