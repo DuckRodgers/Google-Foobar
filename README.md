@@ -2,7 +2,9 @@
 The snips of codes developed during the Google-Foobar challenge.
 
 ## Table of Content
-1. [The First Challenge](#Level1)
+1. [The First Challenge](#Level1) - More Square More Roots
+2. [The Second Challenge - Level 1](#level2A) - The Perfect Binary Tree of Life
+3. [The Second Challenge - Level 2](#level2B) - The Midnight Base Gospel
 
 ## A Little Context
 In case you're not familiar with the Google-Foobar challenge, the first question is why are you here? Just kidding. The Foobar is a secret challenge which may precede a recruitment process done by Google. This is their equivalent of a CV reading, except instead of being open, is _super secret_, except for the thousands of git repositories and posts about it you can find online.
@@ -38,7 +40,7 @@ Then --> root = int(x ** 0.5) --> Approximately 2
          
 Since the output required by the challenge was "2,2", I used from __future__ import print_function. Complete success! We were able to win **LAMBCHOP's** attention and go to **LEVEL 2!**
 
-## The Second Level - First Challenge
+## The Second Level - First Challenge <a name="Level2A"></a>
 Happily past the first round, our adventure must go on. Pretty excited and confident, I was thinking "huh, getting into Google isn't _that_ hard", I put on my best pompous mask and requested the second challenge. This was a saturday morning, because I worked so I wanted to have as much time as possible to crack this.
 
 Good news: My strategy worked out fine, because I needed every single minute for this.
@@ -116,7 +118,7 @@ And so, for a solution(3, [1,2,7,6]) we have an output:
 ```
 We passed all the tests, but I'm not entirely sure this code is without errors, so feel free to jiggle it a bit!
 
-## The Second Level - Second Challenge
+## The Second Level - Second Challenge <a name="Level2B"></a>
 With the head fuming for the first challenge of the second level, I went fully prepared (and aware) of the dangers ahead. As any motivational coach would say, we need to change our mindset, and my mindset was: _this will be hard_.
 
 So, things we learned from the previous phase: before programming, _read_ carefully the problem and write down keywords which might help solving the problem.
