@@ -2,7 +2,7 @@
 The snips of codes developed during the Google-Foobar challenge.
 
 ## Table of Content
-1. [The First Challenge](<a name="The First Level"></a>)
+1. [The First Challenge](<a name=" The First Level"></a>)
 
 ## A Little Context
 In case you're not familiar with the Google-Foobar challenge, the first question is why are you here? Just kidding. The Foobar is a secret challenge which may precede a recruitment process done by Google. This is their equivalent of a CV reading, except instead of being open, is _super secret_, except for the thousands of git repositories and posts about it you can find online.
