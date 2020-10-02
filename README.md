@@ -13,7 +13,7 @@ Legends says if you pass the third phase you get an interview with someone from 
 
 If, like me, you aren't from TI as your original academic formation, then you must imagine what an incredible feeling I got when not only I got the invite but decided to google it and find out what it actually meant. So... this are my code snips which I used to pass from the first and second phase. At the moment I'm still completing the challenge, now entering the **Second Level - Second Challenge**, and 100% hyped up about it.
 
-## The First Level <a name="Level1"></a>
+## The First Level <a name="Level1"></a> - More Square More Roots
 When you first open the challenge there is a small sci-fi story to get you going. I am **COMPLETELY ENGAGED** into this weird bunny terminator thing they have going on. I don't know who wrote it, but it feels like a Tim Burton meets J.J. Abrams vibe to it, I am _into_ this thing, like I would buy the novelization and everything.
 
 Long story short: you (a spy) have infiltrated the base of the evil **Commander Lambchop** who has kidnapped your buddies, but you are on the lowest of the lowest hierarchy level, just a poor minion, far away from everyone relevant in the organization. Except, behold, you just might get your chance to rise up the ranks in the best John Connor fashion. **Evil Commander Lambchop** has a DOOMSDAY machine which needs a lot of power, and she needs to quickly calculate how many solar panels would be necessary to power it.
@@ -40,7 +40,7 @@ Then --> root = int(x ** 0.5) --> Approximately 2
          
 Since the output required by the challenge was "2,2", I used from __future__ import print_function. Complete success! We were able to win **LAMBCHOP's** attention and go to **LEVEL 2!**
 
-## The Second Level - First Challenge <a name="Level2A"></a>
+## The Second Level - First Challenge <a name="Level2A"></a> - The Perfect Binary Tree of Life
 Happily past the first round, our adventure must go on. Pretty excited and confident, I was thinking "huh, getting into Google isn't _that_ hard", I put on my best pompous mask and requested the second challenge. This was a saturday morning, because I worked so I wanted to have as much time as possible to crack this.
 
 Good news: My strategy worked out fine, because I needed every single minute for this.
@@ -118,7 +118,7 @@ And so, for a solution(3, [1,2,7,6]) we have an output:
 ```
 We passed all the tests, but I'm not entirely sure this code is without errors, so feel free to jiggle it a bit!
 
-## The Second Level - Second Challenge <a name="Level2B"></a>
+## The Second Level - Second Challenge <a name="Level2B"></a> - The Midnight Base Gospel
 With the head fuming for the first challenge of the second level, I went fully prepared (and aware) of the dangers ahead. As any motivational coach would say, we need to change our mindset, and my mindset was: _this will be hard_.
 
 So, things we learned from the previous phase: before programming, _read_ carefully the problem and write down keywords which might help solving the problem.
