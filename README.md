@@ -5,6 +5,7 @@ The snips of codes developed during the Google-Foobar challenge.
 1. [The First Challenge](#Level1) - More Square More Roots
 2. [The Second Challenge - Level 1](#level2A) - The Perfect Binary Tree of Life
 3. [The Second Challenge - Level 2](#level2B) - The Midnight Base Gospel
+4. [The Third Challenge - Level 1](#level3A) - Lo0per
 
 ## A Little Context
 In case you're not familiar with the Google-Foobar challenge, the first question is why are you here? Just kidding. The Foobar is a secret challenge which may precede a recruitment process done by Google. This is their equivalent of a CV reading, except instead of being open, is _super secret_, except for the thousands of git repositories and posts about it you can find online.
@@ -156,3 +157,8 @@ Here I am now, ready and eager for Phase 3!
 Mainly happy.
 
 #BringLevel3
+
+## The Third Level - First Challenge <a name="Level3A"></a> - Lo0per
+I was feeling pumped. Ever watched "The Big Short"? Know that "jacked to the t#ts" scene from it? That's how I'm feeling. *Shane, Shane (stares at Shane until he leaves)*. That's pretty much how I felt by the beginning of the challenge.
+
+As always, things we learned from the past phases was to pay attention to keywords from the text
